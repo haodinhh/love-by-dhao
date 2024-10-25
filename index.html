@@ -83,10 +83,9 @@
     <audio id="areYouSureSound" src="no-sound.mp3"></audio> <!-- Âm thanh cho nút Are you sure -->
 
     <script>
-        // Lấy phần tử nhạc nền
         const backgroundMusic = document.getElementById("backgroundMusic");
 
-        // Hàm để phát nhạc nền
+       
         function playBackgroundMusic() {
             backgroundMusic.volume = 0.3; // Thiết lập âm lượng ở mức 30%
             backgroundMusic.play().catch((error) => {
@@ -94,16 +93,16 @@
             });
         }
 
-        // Gọi hàm phát nhạc và hiển thị nút Yes thứ hai khi nhấn vào nút Yes đầu tiên
+      
         function showYesOptions() {
             playBackgroundMusic(); // Phát nhạc nền khi nhấn Yes
-            document.querySelector('.buttons').style.display = 'none'; // Ẩn các nút ban đầu
-            document.querySelector('.yes-options').style.display = 'flex'; // Hiển thị tùy chọn Yes mới
+            document.querySelector('.buttons').style.display = 'none'; 
+            document.querySelector('.yes-options').style.display = 'flex'; 
         }
 
-        // Chuyển hướng sang trang khác
+     
         function goToNewPage() {
-            window.location.href = 'yeye.php'; // Thay 'trang_moi.html' bằng địa chỉ trang bạn muốn chuyển hướng tới
+            window.location.href = 'yeye.html'; 
         }
 
         function displayMessage(text) {
